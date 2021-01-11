@@ -2,10 +2,11 @@ import React from "react";
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 
-function SearchBox({ stations }) {
+function SearchBox({ stations, setSelectedStation }) {
   return (
     <Autocomplete
-      options={stations.map((option) => `${option.name} (${option.address})`)}
+      options={stations}
+      getOptionLabel={(option) => `${option.name} (${option.address})`}
       renderInput={(params) => (
         <TextField
           {...params}
@@ -14,6 +15,11 @@ function SearchBox({ stations }) {
           variant="outlined"
         />
       )}
+      onChange={(event, value, reason) => {
+        if (reason === "select-option") {
+          setSelectedStation(value);
+        }
+      }}
     />
   );
 }

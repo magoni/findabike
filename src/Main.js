@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import useStations from "./useStations";
 import SearchBox from "./SearchBox";
+import StationDetail from "./StationDetail";
 
 const stationsURL =
   "http://hamilton.socialbicycles.com/opendata/station_information.json";
 
 function Main() {
   const stations = useStations(stationsURL);
+  const [selectedStation, setSelectedStation] = useState("");
 
   if (stations.state === "pending") {
     return <div>Loading stations...</div>;
@@ -21,7 +23,15 @@ function Main() {
     );
   }
 
-  return <SearchBox stations={stations.value} />;
+  return (
+    <React.Fragment>
+      <SearchBox
+        stations={stations.value}
+        setSelectedStation={setSelectedStation}
+      />
+      <StationDetail station={selectedStation} />
+    </React.Fragment>
+  );
 }
 
 export default Main;
