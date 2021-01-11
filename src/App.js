@@ -1,13 +1,15 @@
 import "./App.css";
+import React from "react";
+import Main from "./Main";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <main className="App">
+      <section>
         <h1>findabike</h1>
-        <p>sdlfkjdf</p>
-      </header>
-    </div>
+        <Main />
+      </section>
+    </main>
   );
 }
 
