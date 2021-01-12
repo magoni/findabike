@@ -1,7 +1,7 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
-function StationMap({ latitude, longitude }) {
+function StationMap({ latitude, longitude, name, address }) {
   if (!latitude || !longitude) {
     return null;
   }
@@ -19,7 +19,10 @@ function StationMap({ latitude, longitude }) {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Marker position={[latitude, longitude]}>
-        <Popup>Station</Popup>
+        <Popup>
+          <strong>{name}</strong>
+          <div>{address}</div>
+        </Popup>
       </Marker>
     </MapContainer>
   );

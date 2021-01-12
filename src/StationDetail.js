@@ -18,7 +18,12 @@ function StationDetail({ station }) {
         <dt>Rental methods</dt>
         <dd>{station.rental_methods.join(", ")}</dd>
       </dl>
-      <StationMap latitude={station.lat} longitude={station.lon} />
+      <StationMap
+        latitude={station.lat}
+        longitude={station.lon}
+        name={station.name}
+        address={station.address}
+      />
     </React.Fragment>
   );
 }
