@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import useStations from "./useStations";
-import SearchBox from "./SearchBox";
-import StationDetail from "./StationDetail";
+import useStations from "../hooks/useStations";
+import SearchBox from "../SearchBox";
+import StationDetail from "../Station/StationDetail";
 
 const stationsURL =
   "http://hamilton.socialbicycles.com/opendata/station_information.json";
