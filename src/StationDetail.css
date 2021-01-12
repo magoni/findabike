@@ -1,0 +1,12 @@
+dl {
+  line-height: 1.5;
+}
+dt {
+  display: block;
+  font-weight: bold;
+}
+dd {
+  display: block;
+  margin-left: 0;
+  padding-bottom: 1em;
+}

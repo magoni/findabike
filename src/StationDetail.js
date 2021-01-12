@@ -1,13 +1,23 @@
 import React from "react";
 import StationMap from "./StationMap";
+import "./StationDetail.css";
 
 function StationDetail({ station }) {
+  if (!station) {
+    return null;
+  }
+
   return (
     <React.Fragment>
-      Station detail <pre>{JSON.stringify(station, null, 2)}</pre>
-      <p>Name: {station.name}</p>
-      <p>Address: {station.address}</p>
-      <p>Region: {station.region_id}</p>
+      <h2>Station details</h2>
+      <dl>
+        <dt>Name</dt>
+        <dd>{station.name}</dd>
+        <dt>Address</dt>
+        <dd>{station.address}</dd>
+        <dt>Rental methods</dt>
+        <dd>{station.rental_methods.join(", ")}</dd>
+      </dl>
       <StationMap latitude={station.lat} longitude={station.lon} />
     </React.Fragment>
   );
