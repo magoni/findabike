@@ -10,8 +10,9 @@ function StationMap({ latitude, longitude }) {
     <MapContainer
       style={{ height: 350 }}
       center={[latitude, longitude]}
-      zoom={13}
-      scrollWheelZoom={false}
+      zoom={14}
+      // "key" ensures MapContainer re-centers when the latitude/longitude change by re-initialising the MapContainer component
+      key={`${latitude}${longitude}`}
     >
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
