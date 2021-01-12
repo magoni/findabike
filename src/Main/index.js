@@ -4,7 +4,7 @@ import SearchBox from "../SearchBox";
 import StationDetail from "../Station/StationDetail";
 
 const stationsURL =
-  "http://hamilton.socialbicycles.com/opendata/station_information.json";
+  "https://hamilton.socialbicycles.com/opendata/station_information.json";
 
 function Main() {
   const stations = useStations(stationsURL);
