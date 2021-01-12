@@ -6,7 +6,9 @@ function App() {
   return (
     <main className="App">
       <section>
-        <h1>findabike</h1>
+        <h1>
+          🚲 Find-a-bikeshare<sup>TM</sup>️
+        </h1>
         <Main />
       </section>
     </main>
