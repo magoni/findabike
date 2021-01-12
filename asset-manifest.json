@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/findabike/static/css/main.7552a831.chunk.css",
+    "main.js": "/findabike/static/js/main.d07d7730.chunk.js",
+    "main.js.map": "/findabike/static/js/main.d07d7730.chunk.js.map",
+    "runtime-main.js": "/findabike/static/js/runtime-main.b5b0ad1d.js",
+    "runtime-main.js.map": "/findabike/static/js/runtime-main.b5b0ad1d.js.map",
+    "static/js/2.4cff5632.chunk.js": "/findabike/static/js/2.4cff5632.chunk.js",
+    "static/js/2.4cff5632.chunk.js.map": "/findabike/static/js/2.4cff5632.chunk.js.map",
+    "static/js/3.cd5244aa.chunk.js": "/findabike/static/js/3.cd5244aa.chunk.js",
+    "static/js/3.cd5244aa.chunk.js.map": "/findabike/static/js/3.cd5244aa.chunk.js.map",
+    "index.html": "/findabike/index.html",
+    "static/css/main.7552a831.chunk.css.map": "/findabike/static/css/main.7552a831.chunk.css.map",
+    "static/js/2.4cff5632.chunk.js.LICENSE.txt": "/findabike/static/js/2.4cff5632.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b5b0ad1d.js",
+    "static/js/2.4cff5632.chunk.js",
+    "static/css/main.7552a831.chunk.css",
+    "static/js/main.d07d7730.chunk.js"
+  ]
+}
